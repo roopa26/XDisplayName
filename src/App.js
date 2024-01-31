@@ -19,11 +19,11 @@ function App() {
       <form onSubmit={handleSubmit}>
         <div>
           <label for="firstName">First Name:</label>
-          <input type='text' id='firstName' onChange={(e)=>{setFirstName(e.target.value)}}/>
+          <input required type='text' id='firstName' onChange={(e)=>{setFirstName(e.target.value)}}/>
         </div>
         <div>
           <label for="lastName">Last Name:</label>
-          <input type='text' id='lastName' onChange={(e)=>{setLastName(e.target.value)}}/>
+          <input required type='text' id='lastName' onChange={(e)=>{setLastName(e.target.value)}}/>
         </div>
         <button>Submit</button>
       </form>
